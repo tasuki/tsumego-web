@@ -1,0 +1,11 @@
+!!! 5
+%html
+	%head
+		%title Middleman
+		%meta{:charset => "utf-8"}
+		%meta{:content => "Middleman", :name => "description"}
+		%link{:href => "stylesheets/style.css", :rel => "stylesheet"}
+
+	%body
+		= yield
+		= render_partial 'footer'
