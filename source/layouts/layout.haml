@@ -3,14 +3,16 @@
 	%head
 		%title Middleman
 		%meta{:charset => "utf-8"}
-		%meta{:content => "Middleman", :name => "description"}
-		%link{:href => "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css", :rel => "stylesheet"}
-		%link{:href => "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css", :rel => "stylesheet"}
+		%meta{:name => "title", :content => "Tsumego Collections"}
+		%meta{:name => "description", :content => "Improve your go skills through tsumego solving."}
+		%meta{:name => "viewport", :content => "width=device-width"}
 		%link{:href => "//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css", :rel => "stylesheet"}
 		%link{:href => "stylesheets/style.css", :rel => "stylesheet"}
 		%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
-		%script{:src => "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"}
+		%script{:src => "javascripts/bootstrap.min.js"}
 
 	%body
-		= yield
+		= render_partial 'header'
+		.container
+			= yield
 		= render_partial 'footer'

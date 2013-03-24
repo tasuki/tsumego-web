@@ -1,0 +1,66 @@
+@import "bootstrap.less";
+
+.navbar {
+	margin-bottom: 0;
+
+	.container {
+		width: inherit;
+	}
+
+	.navbar-inner {
+		background-image: none;
+	}
+
+	.nav > li > a {
+		border-top: 2px solid transparent;
+	}
+
+	.nav > li > a:hover,
+	.nav > .active > a,
+	.nav > .active > a:hover {
+		border-top: 2px solid @yellow;
+	}
+}
+
+#banner {
+	background: @grayDark url(../images/goban.png) top left no-repeat;
+
+	@media (max-width: 1100px) {
+		background-position: top center;
+	}
+}
+
+#ad {
+	color: @white;
+	height: 150px;
+	font-size: 24px;
+	line-height: 50px;
+	text-shadow: 2px 2px 2px @grayDarker;
+}
+
+#quote {
+	font-size: @fontSizeLarge;
+	padding: 10px 0px;
+
+	i {
+		position: absolute;
+	}
+
+	blockquote {
+		border-left: 0;
+		margin: 0;
+		padding-left: 30px;
+
+		p {
+			font-size: inherit;
+		}
+
+		cite {
+			font-style: italic;
+		}
+	}
+}
+
+#main {
+	padding: 20px 0px;
+}
