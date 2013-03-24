@@ -3,27 +3,24 @@
 .navbar {
 	margin-bottom: 0;
 
-	.container {
-		width: inherit;
-	}
-
 	.navbar-inner {
 		background-image: none;
 	}
 
 	.nav > li > a {
-		border-top: 2px solid transparent;
+		border-top: 4px solid transparent;
 	}
 
 	.nav > li > a:hover,
 	.nav > .active > a,
 	.nav > .active > a:hover {
-		border-top: 2px solid @yellow;
+		border-top: 4px solid @yellow;
 	}
 }
 
 #banner {
 	background: @grayDark url(../images/goban.png) top left no-repeat;
+	margin-bottom: 20px;
 
 	@media (max-width: 1100px) {
 		background-position: top center;
@@ -39,28 +36,15 @@
 }
 
 #quote {
-	font-size: @fontSizeLarge;
 	padding: 10px 0px;
-
-	i {
-		position: absolute;
-	}
 
 	blockquote {
 		border-left: 0;
-		margin: 0;
-		padding-left: 30px;
-
-		p {
-			font-size: inherit;
-		}
-
-		cite {
-			font-style: italic;
-		}
+		p { text-indent: -.4em; }
+		cite { font-style: italic; }
 	}
 }
 
-#main {
-	padding: 20px 0px;
+.table th {
+	border: none;
 }
