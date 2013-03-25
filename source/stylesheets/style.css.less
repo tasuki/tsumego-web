@@ -45,14 +45,6 @@
 	}
 }
 
-.label-recommended {
-	color: @black;
-	background-color: @yellow;
-
-	margin-left: 5px;
-	text-shadow: none;
-}
-
 // Keep footer at the bottom
 html,
 body {
@@ -66,8 +58,13 @@ body {
 	margin: 0 auto -60px;
 }
 
+#push {
+	height: 60px;
+}
+
 #footer {
 	background-color: @grayDark;
+	border-top: 1px solid @gray;
 	color: darken(@textColor, 25%);
 	height: 60px;
 	line-height: 60px;
