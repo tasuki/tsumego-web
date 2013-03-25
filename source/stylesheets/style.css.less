@@ -45,6 +45,34 @@
 	}
 }
 
-.table th {
-	border: none;
+.label-recommended {
+	color: @black;
+	background-color: @yellow;
+
+	margin-left: 5px;
+	text-shadow: none;
+}
+
+// Keep footer at the bottom
+html,
+body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px;
+}
+
+#footer {
+	background-color: @grayDark;
+	color: darken(@textColor, 25%);
+	height: 60px;
+	line-height: 60px;
+
+	a {
+		color: darken(@yellow, 25%);
+	}
 }

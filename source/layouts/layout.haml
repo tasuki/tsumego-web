@@ -11,7 +11,8 @@
 		%script{:src => "javascripts/bootstrap.min.js"}
 
 	%body
-		= render_partial 'header'
-		.container
-			= yield
+		#wrap
+			= render_partial 'header'
+			.container
+				= yield
 		= render_partial 'footer'
