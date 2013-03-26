@@ -5,10 +5,11 @@
 		%meta{:charset => "utf-8"}
 		%meta{:name => "description", :content => "Improve your go skills through tsumego solving."}
 		%meta{:name => "viewport", :content => "width=device-width"}
-		%link{:href => "//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css", :rel => "stylesheet"}
-		%link{:href => "stylesheets/style.css", :rel => "stylesheet"}
-		%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
-		%script{:src => "javascripts/bootstrap.min.js"}
+		#{favicon_tag "favicon.png"}
+		#{stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css"}
+		#{stylesheet_link_tag "style"}
+		#{javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+		#{javascript_include_tag "bootstrap.min.js"}
 
 	%body
 		#wrap

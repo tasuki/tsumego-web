@@ -1,5 +1,6 @@
 @import "bootstrap.less";
 
+// Navigation
 .navbar {
 	margin-bottom: 0;
 
@@ -8,16 +9,18 @@
 	}
 
 	.nav > li > a {
-		border-top: 4px solid transparent;
+		border-top: 5px solid transparent;
 	}
 
 	.nav > li > a:hover,
 	.nav > .active > a,
 	.nav > .active > a:hover {
-		border-top: 4px solid @yellow;
+		border-top: 5px solid @yellow;
 	}
 }
 
+
+// Banner, ad, and quote
 #banner {
 	background: @grayDark url(../images/goban.png) top left no-repeat;
 	margin-bottom: 20px;
@@ -25,27 +28,46 @@
 	@media (max-width: 1100px) {
 		background-position: top center;
 	}
-}
 
-#ad {
-	color: @white;
-	height: 150px;
-	font-size: 24px;
-	line-height: 50px;
-	text-shadow: 2px 2px 2px @grayDarker;
-}
+	#ad {
+		color: @white;
+		height: 150px;
+		font-size: 24px;
+		line-height: 50px;
+		text-shadow: 2px 2px 2px @black;
+	}
 
-#quote {
-	padding: 10px 0px;
+	#quote {
+		padding: 10px 0px;
 
-	blockquote {
-		border-left: 0;
-		p { text-indent: -.4em; }
-		cite { font-style: italic; }
+		blockquote {
+			border-left: 0;
+			p { text-indent: -.4em; }
+			cite { font-style: italic; }
+		}
 	}
 }
 
-// Keep footer at the bottom
+// General stuff
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 1px 1px 1px @black;
+}
+
+table {
+	th.center, td.center {
+		text-align: center;
+	}
+
+	th.default, td.default {
+		background-color: @grayDark;
+		border-color: @grayDarker;
+		font-weight: bold;
+	}
+}
+
+
+// Footer
 html,
 body {
 	height: 100%;
@@ -63,13 +85,13 @@ body {
 }
 
 #footer {
+	margin-top: 40px;
 	background-color: @grayDark;
 	border-top: 1px solid @gray;
 	color: darken(@textColor, 25%);
 	height: 60px;
 	line-height: 60px;
 
-	a {
-		color: darken(@yellow, 25%);
-	}
+	p { margin: 0; }
+	a { color: darken(@yellow, 25%); }
 }

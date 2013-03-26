@@ -2,17 +2,12 @@
 	.navbar-inner
 		.container
 			%a.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
-			%a.brand Tsumego Collections
 			.nav-collapse.collapse
 				%ul.nav
-					%li.active
-						%a Collections
-					%li
-						%a How?
-					%li
-						%a FAQ
-					%li
-						%a Links
+					%li{nav_active("index")}= link_to "Tsumego Collections", "/"
+					%li{nav_active("how")}= link_to "How?", "/how/"
+					%li{nav_active("faq")}= link_to "FAQ", "/faq/"
+					%li{nav_active("links")}= link_to "Links", "/links/"
 
 #banner
 	.container
@@ -22,9 +17,8 @@
 			#quote.span6
 				%blockquote
 					%p
-						&ldquo;It is a matter of life and death,
-						a road either to safety or to ruin.
-						Hence it is a subject of inquiry
+						&ldquo;It is a matter of life and death, a road either
+						to safety or to ruin.  Hence it is a subject of inquiry
 						which can on no account be neglected.&rdquo;
 					%cite
 						&mdash; Sun Tzu: The Art of War
