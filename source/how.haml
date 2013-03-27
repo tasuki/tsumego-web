@@ -1,1 +1,42 @@
-Describe how this was done.
+.row
+	.span6
+		:markdown
+			### The books
+
+			Back in 2006, before I had any idea how to code, I created a
+			monster. Started with sgf files containing the problem collections,
+			wrote an [awful Perl
+			script](https://github.com/tasuk/tsumego/blob/master/scripts/rotate.pl)
+			rotating the problems to the upper left corner. (Hey, it's just 100
+			lines of code and actually *does* something. These days I write
+			thousands of lines of code to do nothing much at all.)
+
+			Then used sgf2dg (back when it was called sgf2tex!) to spit out TeX
+			output.  PdfTeX to get pdfs and voila.
+
+			This would be a good place to thank [Toxygen](http://toxygen.me/).
+			Do you know how Metafont fonts look when processed with pdfTeX?
+			Fucking ugly. I spent weeks trying to convert the Metafont go
+			diagram fonts into PostScript format. Then Majo came along and
+			converted them, I still have no idea how he did it. If you ever
+			want to produce go pdf's from TeX, get the [PostScript
+			fonts](https://github.com/tasuk/tsumego/tree/master/fonts).
+
+	.span6
+		:markdown
+			### The goban picture
+
+			The header picture (my favorite tsumego -- no ko!) was done in
+			[POV-Ray](http://www.povray.org/), which is an amazing piece of
+			software that went missing from Ubuntu repos recently. Screw
+			Ubuntu.
+
+			### The website
+
+			7 years after launch -- 2013 AD -- seems like the right time to
+			drop the "Beta" and refresh the website a little. Also a good
+			opportunity to finally try out [Twitter
+			Bootstrap](http://twitter.github.com/bootstrap/). And since static
+			site generation is all the rage these days and Jekyll is not hip
+			enough anymore, it's done with
+			[Middleman](http://middlemanapp.com/).
