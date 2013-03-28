@@ -1,13 +1,15 @@
-* [Uli's classical problems](http://www.u-go.net/classic/) -- the source for
-some of the pdfs
+* [Uli's classical problems][uli] -- the source for some of the pdfs
 
-* [Classical go problem books on Sensei's
-library](http://senseis.xmp.net/?ClassicalGoProblemBooks) -- overview of
+* [Classical go problem books on Sensei's library][senseis] -- overview of
 classical collections, with some links to individual problem collection pages
 that contain more info
 
-* [Benjamin's guide to become
-strong](http://senseis.xmp.net/?BenjaminTeuber/GuideToBecomeStrong) --
-priceless, Benjamin knows what he's talking about
+* [Benjamin's guide to become strong][benji] -- priceless, Benjamin knows what
+he's talking about
 
-* [KGS Go Server](http://www.gokgs.com/) -- used to be my second home
+* [KGS Go Server][kgs] -- used to be my second home
+
+[uli]:     http://www.u-go.net/classic/
+[senseis]: http://senseis.xmp.net/?ClassicalGoProblemBooks
+[benji]:   http://senseis.xmp.net/?BenjaminTeuber/GuideToBecomeStrong
+[kgs]:     http://www.gokgs.com/
