@@ -59,6 +59,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :analytics_account, 'UA-2554217-4'
+
 helpers do
 	def nav_active(page)
 		(page_classes().split(" ").include?(page)) ? {:class => "active"} : {}
