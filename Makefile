@@ -1,0 +1,2 @@
+middleman:
+	middleman build
