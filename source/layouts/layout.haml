@@ -1,9 +1,11 @@
 !!! 5
 %html
 	%head
-		%title Tsumego Collections
+		%title
+			= current_page.data.title
 		%meta{:charset => "utf-8"}
-		%meta{:name => "description", :content => "Improve your go skills through tsumego solving."}
+		%meta{:name => "keywords", :content => "tsumego, go problems, study, pdf, download, print"}
+		%meta{:name => "description", :content => current_page.data.description}
 		%meta{:name => "viewport", :content => "width=device-width"}
 		#{favicon_tag "favicon.png"}
 		#{stylesheet_link_tag "//fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic"}

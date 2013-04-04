@@ -1,3 +1,8 @@
+---
+title: Links to other cool tsumego resources
+description: Problem sources, cool tips on studying tsumego, and other info.
+---
+
 * [Uli's classical problems][uli] -- the source for some of the pdfs
 
 * [Classical go problem books on Sensei's library][senseis] -- overview of
