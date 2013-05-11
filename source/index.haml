@@ -5,6 +5,38 @@ description: It is a matter of life and death,
              Hence it is a subject of inquiry
              which can on no account be neglected.
 /description: Improve your go skills through tsumego solving!
+
+books:
+    -
+        name: "Cho's enc. &ndash; Elementary"
+        stars: 1
+        file: cho-1-elementary
+        problems: 900
+    -
+        name: "Cho's enc. &ndash; Intermediate"
+        stars: 2
+        file: cho-2-intermediate
+        problems: 861
+    -
+        name: "Cho's enc. &ndash; Advanced"
+        stars: 3
+        file: cho-3-advanced
+        problems: 792
+    -
+        name: "Gokyo Shumyo"
+        stars: 3
+        file: gokyo-shumyo
+        problems: 520
+    -
+        name: "Xuanxuan Qijing"
+        stars: 4
+        file: xxqj
+        problems: 347
+    -
+        name: "Igo Hatsuyo-ron"
+        stars: 5
+        file: hatsuyoron
+        problems: 183
 ---
 
 %table.table.table-hover
@@ -21,91 +53,19 @@ description: It is a matter of life and death,
 			%th.center Problems
 
 	%tbody
-		%tr
-			%td
-				Cho's enc. &ndash; Elementary
-			%td.center
-				%i.icon-star
-			%td.center.default
-				%a{:href => "books/cho-1-elementary.pdf"} Normal
-			%td.center
-				%a{:href => "books/cho-1-elementary-dbl.pdf"} Double
-			%td.center
-				%a{:href => "books/cho-1-elementary-mobile.pdf"} Mobile
-			%td.center 900
-
-		%tr
-			%td Cho's enc. &ndash; Intermediate
-			%td.center
-				%i.icon-star
-				%i.icon-star
-			%td.center.default
-				%a{:href => "books/cho-2-intermediate.pdf"} Normal
-			%td.center
-				%a{:href => "books/cho-2-intermediate-dbl.pdf"} Double
-			%td.center
-				%a{:href => "books/cho-2-intermediate-mobile.pdf"} Mobile
-			%td.center 861
-
-		%tr
-			%td Cho's enc. &ndash; Advanced
-			%td.center
-				%i.icon-star
-				%i.icon-star
-				%i.icon-star
-			%td.center.default
-				%a{:href => "books/cho-3-advanced.pdf"} Normal
-			%td.center
-				%a{:href => "books/cho-3-advanced-dbl.pdf"} Double
-			%td.center
-				%a{:href => "books/cho-3-advanced-mobile.pdf"} Mobile
-			%td.center 792
-
-		%tr
-			%td
-				Gokyo Shumyo
-			%td.center
-				%i.icon-star
-				%i.icon-star
-				%i.icon-star
-			%td.center.default
-				%a{:href => "books/gokyoshumyo.pdf"} Normal
-			%td.center
-				%a{:href => "books/gokyoshumyo-dbl.pdf"} Double
-			%td.center
-				%a{:href => "books/gokyoshumyo-mobile.pdf"} Mobile
-			%td.center 520
-
-		%tr
-			%td Xuanxuan Qijing
-			%td.center
-				%i.icon-star
-				%i.icon-star
-				%i.icon-star
-				%i.icon-star
-			%td.center.default
-				%a{:href => "books/xxqj.pdf"} Normal
-			%td.center
-				%a{:href => "books/xxqj-dbl.pdf"} Double
-			%td.center
-				%a{:href => "books/xxqj-mobile.pdf"} Mobile
-			%td.center 347
-
-		%tr
-			%td Igo Hatsuyo-ron
-			%td.center
-				%i.icon-star
-				%i.icon-star
-				%i.icon-star
-				%i.icon-star
-				%i.icon-star
-			%td.center.default
-				%a{:href => "books/hatsuyoron.pdf"} Normal
-			%td.center
-				%a{:href => "books/hatsuyoron-dbl.pdf"} Double
-			%td.center
-				%a{:href => "books/hatsuyoron-mobile.pdf"} Mobile
-			%td.center 183
+		- current_page.data.books.each do |book|
+			%tr
+				%td=book.name
+				%td.center
+					- (0...book.stars).each do |i|
+						%i.icon-star
+				%td.center.default
+					%a{:href => "books/#{book.file}.pdf"} Normal
+				%td.center
+					%a{:href => "books/#{book.file}-dbl.pdf"} Double
+				%td.center
+					%a{:href => "books/#{book.file}-mobile.pdf"} Mobile
+				%td.center=book.problems
 
 .row
 	.span6
