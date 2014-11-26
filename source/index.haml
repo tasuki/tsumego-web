@@ -59,11 +59,11 @@ books:
 					- (0...book.stars).each do |i|
 						%i.icon-star
 				%td.center.default
-					%a{:href => "books/#{book.file}.pdf"} Normal
+					%a{:href => "/books/#{book.file}.pdf"} Normal
 				%td.center
-					%a{:href => "books/#{book.file}-dbl.pdf"} Double
+					%a{:href => "/books/#{book.file}-dbl.pdf"} Double
 				%td.center
-					%a{:href => "books/#{book.file}-mobile.pdf"} Mobile
+					%a{:href => "/books/#{book.file}-mobile.pdf"} Mobile
 				%td.center=book.problems
 
 .row
