@@ -4,4 +4,4 @@ default:
 	# update ruby dependencies
 	bundle
 	# build static site
-	middleman build
+	bundle exec middleman build
