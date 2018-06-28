@@ -44,11 +44,9 @@ books:
 			%th Collection
 			%th.center Difficulty
 			%th.center.default
-				%abbr{:title => "Simple pdf"} Normal
+				%abbr{:title => "A5 pdf for printing and larger screens"} Normal
 			%th.center
-				%abbr{:title => "Suitable for printing a booklet"} Booklet
-			%th.center
-				%abbr{:title => "Smaller format for mobile devices"} Mobile
+				%abbr{:title => "A6 pdf for mobile devices"} Mobile
 			%th.center Problems
 
 	%tbody
@@ -61,27 +59,16 @@ books:
 				%td.center.default
 					%a{:href => "/books/#{book.file}.pdf"} Normal
 				%td.center
-					%a{:href => "/books/#{book.file}-dbl.pdf"} Double
-				%td.center
 					%a{:href => "/books/#{book.file}-mobile.pdf"} Mobile
 				%td.center=book.problems
 
 .row
 	.span6
 		:markdown
-			### Formats
+			### 2018 anniversary update
 
-			The default **Normal, single page** pdf is the easiest to use and
-			suitable for on-screen viewing. If you're not sure, pick this one!
-
-			The **Booklet, double page pdf** is meant for A5 booklet printing.
-			Use an A4 printer to print the first half of the pages.  Then turn
-			the stack of papers upside down and print the second half of the
-			pages. After that, staple in the middle, fold in half, and enjoy
-			your fancy new brochure.
-
-			[Ruben Berenguel](http://www.mostlymaths.net/) assembled
-			**mobile-friendly** versions suited for small screens.
+			Hey yo, all the books have gotten refreshed for 2018: better
+			layout, nicer wording, vectorized mobile version.
 
 	.span6
 		:markdown
