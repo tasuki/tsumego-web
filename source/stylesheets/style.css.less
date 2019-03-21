@@ -22,38 +22,24 @@
 
 // Banner, ad, and quote
 #banner {
-	background: @grayDark url(../images/goban.png) top left no-repeat;
 	border-bottom: 1px solid @gray;
 	margin-bottom: 20px;
+	background: #222;
 
-	@media (max-width: 768px) {
-		background: none;
-	}
-	@media (max-width: 1100px) {
-		background-position: top center;
-	}
-
-	#ad {
-		color: @white;
+	#goban {
+		text-align: center;
+		background: url(../images/goban.svg) bottom center no-repeat;
+		background-size: 400px auto;
 		height: 150px;
-		font-size: 24px;
-		font-weight: bold;
-		text-shadow: 2px 2px 2px @black;
+		img {
+			opacity: 70%;
+		}
 
 		@media (max-width: 768px) {
 			display: none;
 		}
-		div.text {
-			margin: 20px;
-
-			@media (max-width: 768px) {
-				color: @grayLight;
-				text-align: right;
-			}
-			@media (min-width: 1600px) {
-				color: @grayLight;
-				padding-left: 300px;
-			}
+		@media (max-width: 979px) {
+			background-size: 300px auto;
 		}
 	}
 
