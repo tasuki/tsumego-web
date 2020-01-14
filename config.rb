@@ -6,7 +6,6 @@ activate :directory_indexes
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
-set :analytics_account, 'UA-2554217-4'
 
 # Helpers
 helpers do
