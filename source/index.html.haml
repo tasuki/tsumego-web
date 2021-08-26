@@ -8,31 +8,43 @@ description: It is a matter of life and death,
 books:
     -
         name: "Cho's enc. &ndash; Elementary"
+        stars_prefix: ""
         stars: 1
         file: cho-1-elementary
         problems: 900
     -
         name: "Cho's enc. &ndash; Intermediate"
+        stars_prefix: ""
         stars: 2
         file: cho-2-intermediate
         problems: 861
     -
         name: "Cho's enc. &ndash; Advanced"
+        stars_prefix: ""
         stars: 3
         file: cho-3-advanced
         problems: 792
     -
+        name: "Lee Chang-ho's selected L&D"
+        stars_prefix: "<i class='icon-star'></i> to "
+        stars: 3
+        file: lee-chang-ho
+        problems: 727
+    -
         name: "Gokyo Shumyo"
+        stars_prefix: ""
         stars: 3
         file: gokyoshumyo
         problems: 520
     -
         name: "Xuanxuan Qijing"
+        stars_prefix: ""
         stars: 4
         file: xxqj
         problems: 347
     -
         name: "Igo Hatsuyo-ron"
+        stars_prefix: ""
         stars: 5
         file: hatsuyoron
         problems: 183
@@ -56,6 +68,7 @@ books:
 				%td
 					%a{:href => "/books/#{book.file}-mobile.pdf"} Mobile
 				%td.center
+					= book.stars_prefix
 					- (0...book.stars).each do |i|
 						%i.icon-star
 				%td.center=book.problems
