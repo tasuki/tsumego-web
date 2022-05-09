@@ -2,7 +2,7 @@
 
 Install Ruby & bundler, on Debian/Ubuntu:
 
-	sudo apt-get install ruby
+	sudo apt-get install ruby ruby-dev
 	sudo gem install bundler
 
 Initialize git modules in project directory and use local env:
