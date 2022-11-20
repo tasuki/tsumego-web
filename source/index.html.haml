@@ -57,7 +57,8 @@ books:
 					%a{:href => "/books/#{book.file}-mobile.pdf"} Mobile
 				%td.center
 					- (0...book.stars).each do |i|
-						%i.icon-star
+						%svg.icon{}
+							%use{"xlink:href":"/images/icons.svg#icon-star"}
 				%td.center=book.problems
 
 .row
