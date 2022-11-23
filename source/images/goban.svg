@@ -4,46 +4,54 @@
 
 <rect x="0" y="0" width="16" height="8" style="fill:#222;"/>
 
-<g transform="rotate(14) translate(0.8 -4.5) scale(1.03)">
-<path d="M .5,1 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M .5,2 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M .5,3 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M .5,4 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M .5,5 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M .5,6 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M .5,7 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M .5,8 h 13.5" style="stroke:#ccc;stroke-width:.05;" />
+<g transform="rotate(14) translate(0.8 -4.5) scale(1.03)" stroke="#ccc">
+	<g stroke-width=".05">
+		<path d="M .5,1 h 13.5" />
+		<path d="M .5,2 h 13.5" />
+		<path d="M .5,3 h 13.5" />
+		<path d="M .5,4 h 13.5" />
+		<path d="M .5,5 h 13.5" />
+		<path d="M .5,6 h 13.5" />
+		<path d="M .5,7 h 13.5" />
+		<path d="M .5,8 h 13.5" />
 
-<path d="M  1,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  2,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  3,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  4,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  5,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  6,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  7,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  8,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M  9,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M 10,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M 11,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M 12,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M 13,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
-<path d="M 14,.5 v 7.5" style="stroke:#ccc;stroke-width:.05;" />
+		<path d="M  1,.5 v 7.5" />
+		<path d="M  2,.5 v 7.5" />
+		<path d="M  3,.5 v 7.5" />
+		<path d="M  4,.5 v 7.5" />
+		<path d="M  5,.5 v 7.5" />
+		<path d="M  6,.5 v 7.5" />
+		<path d="M  7,.5 v 7.5" />
+		<path d="M  8,.5 v 7.5" />
+		<path d="M  9,.5 v 7.5" />
+		<path d="M 10,.5 v 7.5" />
+		<path d="M 11,.5 v 7.5" />
+		<path d="M 12,.5 v 7.5" />
+		<path d="M 13,.5 v 7.5" />
+		<path d="M 14,.5 v 7.5" />
+	</g>
 
-<circle cx="12" cy="8" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx=" 9" cy="8" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx=" 9" cy="7" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx=" 9" cy="6" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx="10" cy="6" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx="11" cy="6" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx="12" cy="5" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx="13" cy="5" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
-<circle cx="14" cy="5" r=".46" style="fill:#ccc;stroke:#ccc;stroke-width:.07" />
+	<g stroke-width=".07">
+		<g fill="#ccc">
+			<circle cx="12" cy="8" r=".46" />
+			<circle cx=" 9" cy="8" r=".46" />
+			<circle cx=" 9" cy="7" r=".46" />
+			<circle cx=" 9" cy="6" r=".46" />
+			<circle cx="10" cy="6" r=".46" />
+			<circle cx="11" cy="6" r=".46" />
+			<circle cx="12" cy="5" r=".46" />
+			<circle cx="13" cy="5" r=".46" />
+			<circle cx="14" cy="5" r=".46" />
+		</g>
 
-<circle cx="13" cy="8" r=".49" style="fill:#222;stroke:#ccc;stroke-width:.07" />
-<circle cx="10" cy="7" r=".49" style="fill:#222;stroke:#ccc;stroke-width:.07" />
-<circle cx="11" cy="7" r=".49" style="fill:#222;stroke:#ccc;stroke-width:.07" />
-<circle cx="12" cy="6" r=".49" style="fill:#222;stroke:#ccc;stroke-width:.07" />
-<circle cx="13" cy="6" r=".49" style="fill:#222;stroke:#ccc;stroke-width:.07" />
-<circle cx="14" cy="6" r=".49" style="fill:#222;stroke:#ccc;stroke-width:.07" />
+		<g fill="#222">
+			<circle cx="13" cy="8" r=".49" />
+			<circle cx="10" cy="7" r=".49" />
+			<circle cx="11" cy="7" r=".49" />
+			<circle cx="12" cy="6" r=".49" />
+			<circle cx="13" cy="6" r=".49" />
+			<circle cx="14" cy="6" r=".49" />
+		</g>
+	</g>
 </g>
 </svg>
