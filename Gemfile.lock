@@ -99,6 +99,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
@@ -108,6 +109,7 @@ DEPENDENCIES
   middleman
   rb-inotify
   therubyracer
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.1.4
