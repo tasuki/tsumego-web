@@ -137,13 +137,13 @@ a:hover
 		white-space: nowrap
 		@media (max-width: 450px)
 			padding: 5px
-		@media (max-width: 400px)
-			font-size: 14px
-			padding: 2px
 	th.center, td.center
 		text-align: center
 	th.default, td.default
 		font-weight: bold
+	th.problems, td.problems
+		@media (max-width: 400px)
+			display: none
 
 .icon
 	width: 1em

@@ -48,7 +48,7 @@ books:
 			%th
 				%abbr{:title => "A6 pdf for mobile devices"} Mobile
 			%th.center Difficulty
-			%th.center Problems
+			%th.center.problems Problems
 
 	%tbody
 		- current_page.data.books.each do |book|
@@ -61,7 +61,7 @@ books:
 					- (0...book.stars).each do |i|
 						%svg.icon{}
 							%use{"xlink:href":"/images/icons.svg#icon-star"}
-				%td.center=book.problems
+				%td.center.problems=book.problems
 
 .pure-g
 	.pure-u-md-1-2
