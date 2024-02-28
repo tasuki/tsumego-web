@@ -1,22 +1,16 @@
-.navbar.navbar-inverse.navbar-static-top
-	.navbar-inner
-		.container
-			%a.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
-				%span.icon-bar
-				%span.icon-bar
-				%span.icon-bar
-			.nav-collapse.collapse
-				%ul.nav
-					%li{nav_active("index")}= link_to "Tsumego Collections", "/"
-					%li{nav_active("how")}= link_to "How?", "/how/"
-					%li{nav_active("faq")}= link_to "FAQ", "/faq/"
-					%li{nav_active("links")}= link_to "Links", "/links/"
+.pure-menu.pure-menu-horizontal
+	.pad
+		%ul.pure-menu-list
+			%li.pure-menu-item{nav_active("index")}= link_to "Tsumego Collections", "/", :class => "pure-menu-link"
+			%li.pure-menu-item{nav_active("how")}= link_to "How?", "/how/", :class => "pure-menu-link"
+			%li.pure-menu-item{nav_active("faq")}= link_to "FAQ", "/faq/", :class => "pure-menu-link"
+			%li.pure-menu-item{nav_active("links")}= link_to "Links", "/links/", :class => "pure-menu-link"
 
 #banner
-	.container
-		.row
-			#goban.span6
-			#quote.span6
+	.pad
+		.pure-g
+			#goban.pure-u-md-1-2
+			#quote.pure-u-md-1-2
 				%blockquote
 					%p
 						&ldquo;It is a matter of life and death, a road either

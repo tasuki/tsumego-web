@@ -9,14 +9,15 @@
 		%meta{:name => "viewport", :content => "width=device-width"}
 		%meta{:name => "theme-color", :content => "#1b1b1b"}
 		#{favicon_tag "favicon.png"}
+		#{stylesheet_link_tag "pure-min"}
+		#{stylesheet_link_tag "pure-grids-responsive-min"}
 		#{stylesheet_link_tag "style"}
-		#{javascript_include_tag "/javascripts/jquery.min.js"}
-		#{javascript_include_tag "/javascripts/bootstrap.min.js"}
 
 	%body
-		#wrap
+		#header
 			= render_partial 'header'
-			.container
+		#content
+			.pad
 				= yield
-			#push
-		= render_partial 'footer'
+		%footer
+			= render_partial 'footer'

@@ -7,17 +7,19 @@ description: It is a matter of life and death,
 
 books:
     -
-        name: "Cho's enc. – Elementary"
+        name: "Cho's: Elementary"
+        short: "Cho's ency: Elem"
         stars: 1
         file: cho-1-elementary
         problems: 900
     -
-        name: "Cho's enc. – Intermediate"
+        name: "Cho's: Intermediate"
+        short: "Cho's ency: Int"
         stars: 2
         file: cho-2-intermediate
         problems: 861
     -
-        name: "Cho's enc. – Advanced"
+        name: "Cho's: Advanced"
         stars: 3
         file: cho-3-advanced
         problems: 792
@@ -38,7 +40,7 @@ books:
         problems: 183
 ---
 
-%table.table.table-hover
+%table
 	%thead
 		%tr
 			%th
@@ -61,15 +63,20 @@ books:
 							%use{"xlink:href":"/images/icons.svg#icon-star"}
 				%td.center=book.problems
 
-.row
-	.span6
+.pure-g
+	.pure-u-md-1-2
 		:markdown
+			### 2024 update
+
+			Website hopefully slightly less bad on small devices. Also fewer
+			resources and absolutely no JavaScript. Goodbye Twitter Bootstrap!
+
 			### 2018 anniversary update
 
 			Hey yo, all the books have gotten refreshed for 2018: better
 			layout, nicer wording, vectorized mobile version.
 
-	.span6
+	.pure-u-md-1-2
 		:markdown
 			### Collections
 

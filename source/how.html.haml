@@ -3,8 +3,8 @@ title: How were Tsumego Collections created?
 description: Technical info on the books, the goban picture, and the website.
 ---
 
-.row
-	.span6
+.pure-g
+	.pure-u-md-1-2
 		:markdown
 			### The books
 
@@ -18,34 +18,32 @@ description: Technical info on the books, the goban picture, and the website.
 			Then used sgf2dg (back when it was called sgf2tex!) to spit out TeX
 			output.  PdfTeX to get pdfs and voila.
 
-			This would be a good place to thank [Toxygen][toxygen].  Do you
-			know how Metafont fonts look when processed with pdfTeX?  Fucking
-			ugly. I spent weeks trying to convert the Metafont go diagram fonts
-			into PostScript format. Then Majo came along and converted them, I
-			still have no idea how he did it. If you ever want to produce go
-			pdf's from TeX, get the [PostScript fonts][fonts].
+			This would be a good place to thank [Toxygen][toxygen]. When
+			processed with pdfTeX, the Metafont fonts get inserted as bitmaps
+			and look very ugly. I spent weeks trying to convert the Metafont go
+			diagram fonts into PostScript format. Then Majo came along and
+			converted them, I still have no idea how he did it. If you ever
+			want to produce go pdf's from TeX, get the [PostScript
+			fonts][fonts].
 
 			[toxygen]: http://toxygen.me/
 			[rotate]:  https://github.com/tasuki/tsumego/blob/master/scripts/rotate.pl
 			[fonts]:   https://github.com/tasuki/tsumego/tree/master/fonts
 
-	.span6
+	.pure-u-md-1-2
 		:markdown
 			### The website
 
-			7 years after launch -- 2013 AD -- seems like the right time to
-			drop the "Beta" and refresh the website a little. Also a good
-			opportunity to finally try out Twitter Bootstrap. And since static
-			site generation is all the rage these days and Jekyll is not hip
-			enough anymore, it's done with Middleman. You can [see the source
-			of the Tsumego Collections website][source] and submit [bug
-			reports][bugs].
+			I forget how this was done before 2013, but from 2013 to 2024 we've
+			suffered under Twitter Bootstrap. Now the website is styled by
+			[Pure.css][purecss] to great happiness and simplification.
 
-			Bootstrap sucks, please use [Pure.css][purecss] instead!
+			[Middleman][middleman] has been aging nicely these 10 years.
 
-			Middleman is aging nicely.
+			You can [see the source of the Tsumego Collections website][source]
+			and submit [bug reports][bugs].
 
-			[povray]: http://www.povray.org/
 			[source]: https://github.com/tasuki/tsumego-web
 			[bugs]:   https://github.com/tasuki/tsumego-web/issues
 			[purecss]: https://purecss.io/
+			[middleman]: https://middlemanapp.com/

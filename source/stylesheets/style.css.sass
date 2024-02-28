@@ -1,0 +1,165 @@
+@import fonts
+
+// Colors
+$black:      #000
+$background: #1B1B1B
+$fainter:    #222
+$faint:      #333
+$text-color: #AAA
+$link-color: #FFC40D
+$contrasty:  #FFF
+
+// Layout + Global
+html, button, input, select, textarea, .pure-g [class *= "pure-u"]
+	font-family: "Titillium Web"
+	font-size: 16px
+
+body
+	background-color: $background
+	color: $text-color
+	display: grid
+	grid-template-rows: auto 1fr auto
+	line-height: 1.5
+	min-height: 100vh
+
+
+.pad
+	margin: auto
+	max-width: 900px
+	padding: 0 10px
+
+	@media (max-width: 450px)
+		padding: 0
+
+a
+	color: $link-color
+	text-decoration: none
+a:hover
+	color: darken($link-color, 15%)
+	text-decoration: underline
+
+
+// Navigation
+.pure-menu
+	margin-bottom: 0
+	border-bottom: 1px solid $faint
+
+.pure-menu-item > a
+	border-top: 5px solid transparent
+
+.pure-menu-item > a:hover, .pure-menu-item.active > a
+	border-top: 5px solid $link-color
+	color: $contrasty
+
+.pure-menu-link:hover
+	background-color: inherit
+	text-decoration: none
+
+.pure-menu-link
+	@media (max-width: 450px)
+		padding: .5em
+	@media (max-width: 350px)
+		padding: .3em
+
+
+// Banner, ad, and quote
+#banner
+	border-bottom: 1px solid $faint
+	margin-bottom: 20px
+	background: $fainter
+
+	#goban
+		text-align: center
+		background: url(../images/goban.svg) bottom center no-repeat
+		background-size: 400px auto
+		height: 150px
+		img
+			opacity: 70%
+
+		@media (max-width: 768px)
+			display: none
+
+	#quote
+		padding: 10px 0px
+
+		@media (max-width: 768px)
+			padding: 10px
+
+		blockquote
+			border-left: 0
+			margin: 0 10px
+			padding: 0
+			p
+				font-size: 20px
+				line-height: 1.25
+				margin: 0
+				padding: 0
+				text-indent: -.3em
+			cite
+				font-style: italic
+
+#content
+	h1, h2, h3, h4, h5, h6
+		text-shadow: 1px 1px 1px $black
+
+	h3
+		font-size: 28px
+		margin: 10px
+
+	p
+		margin: 10px
+
+	abbr[title]
+		cursor: help
+		border-bottom: 1px dotted $text-color
+		text-decoration: none
+
+	ul
+		list-style-type: square
+
+	table
+		border-collapse: collapse
+		border-spacing: 0
+		max-width: 500px
+		margin: 0 auto 24px auto
+		width: 100%
+
+	tbody
+		tr
+			border-top: 1px solid $fainter
+		tr:hover
+			background-color: $fainter
+
+	th, td
+		padding: 8px
+		text-align: left
+		overflow: hidden
+		white-space: nowrap
+		@media (max-width: 450px)
+			padding: 5px
+		@media (max-width: 400px)
+			font-size: 14px
+			padding: 2px
+	th.center, td.center
+		text-align: center
+	th.default, td.default
+		font-weight: bold
+
+.icon
+	width: 1em
+	height: 1em
+	margin-right: -0.25em
+	vertical-align: middle
+	display: inline-block
+
+footer
+	background-color: $fainter
+	border-top: 1px solid $faint
+	color: darken($text-color, 20%)
+	padding: 17px
+
+	p
+		margin: 0
+		padding: 0
+	a
+		color: darken($link-color, 20%)
