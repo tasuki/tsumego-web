@@ -26,10 +26,10 @@ body
 .pad
 	margin: auto
 	max-width: 900px
-	padding: 0 10px
+	padding: 0
 
-	@media (max-width: 450px)
-		padding: 0
+	@media (min-width: 450px)
+		padding: 0 10px
 
 a
 	color: $link-color
@@ -56,10 +56,11 @@ a:hover
 	text-decoration: none
 
 .pure-menu-link
-	@media (max-width: 450px)
+	padding: .3em
+	@media (min-width: 350px)
 		padding: .5em
-	@media (max-width: 350px)
-		padding: .3em
+	@media (min-width: 450px)
+		padding: .5em 1em
 
 
 // Banner, ad, and quote
@@ -72,18 +73,19 @@ a:hover
 		text-align: center
 		background: url(../images/goban.svg) bottom center no-repeat
 		background-size: 400px auto
+		display: none
 		height: 150px
 		img
 			opacity: 70%
 
-		@media (max-width: 768px)
-			display: none
+		@media (min-width: 48em)
+			display: block
 
 	#quote
-		padding: 10px 0px
+		padding: 10px
 
-		@media (max-width: 768px)
-			padding: 10px
+		@media (min-width: 48em)
+			padding: 10px 0px
 
 		blockquote
 			border-left: 0
@@ -131,19 +133,20 @@ a:hover
 			background-color: $fainter
 
 	th, td
-		padding: 8px
+		padding: 5px
 		text-align: left
 		overflow: hidden
 		white-space: nowrap
-		@media (max-width: 450px)
-			padding: 5px
+		@media (min-width: 450px)
+			padding: 8px
 	th.center, td.center
 		text-align: center
 	th.default, td.default
 		font-weight: bold
 	th.problems, td.problems
-		@media (max-width: 400px)
-			display: none
+		display: none
+		@media (min-width: 400px)
+			display: block
 
 .icon
 	width: 1em
