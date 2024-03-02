@@ -2,8 +2,7 @@
 
 Install Ruby & bundler, on Debian/Ubuntu:
 
-	sudo apt-get install ruby
-	sudo gem install bundler
+	sudo apt install bundler
 
 Get Ruby dependencies, and build project:
 
