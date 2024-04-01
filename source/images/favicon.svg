@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="64px" height="64px">
+<defs>
+<filter id="blur">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="0.1"/>
+</filter>
+<radialGradient id="stripes" gradientTransform="translate(-4, -1) scale(6, 4)">
+	<stop offset="40%" stop-color="#EEE"/>
+	<stop offset="43%" stop-color="#CCC"/>
+	<stop offset="44%" stop-color="#EEE"/>
+
+	<stop offset="45%" stop-color="#EEE"/>
+	<stop offset="48%" stop-color="#CCC"/>
+	<stop offset="49%" stop-color="#EEE"/>
+
+	<stop offset="50%" stop-color="#EEE"/>
+	<stop offset="53%" stop-color="#CCC"/>
+	<stop offset="54%" stop-color="#EEE"/>
+
+	<stop offset="55%" stop-color="#EEE"/>
+	<stop offset="58%" stop-color="#CCC"/>
+	<stop offset="59%" stop-color="#EEE"/>
+
+	<stop offset="60%" stop-color="#EEE"/>
+	<stop offset="63%" stop-color="#CCC"/>
+	<stop offset="64%" stop-color="#EEE"/>
+
+	<stop offset="65%" stop-color="#EEE"/>
+	<stop offset="68%" stop-color="#CCC"/>
+	<stop offset="69%" stop-color="#EEE"/>
+
+	<stop offset="70%" stop-color="#EEE"/>
+	<stop offset="73%" stop-color="#CCC"/>
+	<stop offset="74%" stop-color="#EEE"/>
+</radialGradient>
+<radialGradient id="edges">
+	<stop offset="80%" stop-color="#FFF0"/>
+	<stop offset="100%" stop-color="#0003"/>
+</radialGradient>
+<radialGradient id="highlight" gradientTransform="translate(-0.15 -0.15)">
+	<stop offset="0%" stop-color="#FFF"/>
+	<stop offset="20%" stop-color="#FFF"/>
+	<stop offset="50%" stop-color="#FFF0"/>
+</radialGradient>
+</defs>
+
+<circle cx="4.1" cy="4.1" r="3.8" fill="#000C" filter="url(#blur)"/>
+<circle cx="4" cy="4" r="3.8" fill="url(#stripes)" />
+<circle cx="4" cy="4" r="3.8" fill="url(#edges)" />
+<circle cx="4" cy="4" r="3.8" fill="url(#highlight)" />
+</svg>
