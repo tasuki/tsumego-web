@@ -8,32 +8,38 @@ description: It is a matter of life and death,
 books:
     -
         name: "Cho's Elementary"
-        stars: 1
+        difficulty: 15 kyu
+        diff_more: 20 to 8 kyu
         file: cho-1-elementary
         problems: 900
     -
         name: "Cho's Intermediate"
-        stars: 2
+        difficulty: 8 kyu
+        diff_more: 10 to 4 kyu
         file: cho-2-intermediate
         problems: 861
     -
         name: "Cho's Advanced"
-        stars: 3
+        difficulty: 3 kyu
+        diff_more: 5 kyu to 1 dan
         file: cho-3-advanced
         problems: 792
     -
         name: "Gokyo Shumyo"
-        stars: 3
+        difficulty: 1 kyu
+        diff_more: 2 kyu to 3 dan
         file: gokyoshumyo
         problems: 520
     -
         name: "Xuanxuan Qijing"
-        stars: 4
+        difficulty: 2 dan
+        diff_more: 1 to 4 dan
         file: xxqj
         problems: 347
     -
         name: "Igo Hatsuyo-ron"
-        stars: 5
+        difficulty: 7 dan
+        diff_more: this is sparta!
         file: hatsuyoron
         problems: 183
 ---
@@ -56,9 +62,7 @@ books:
 				%td
 					%a{:href => "/books/#{book.file}-mobile.pdf"} Mobile
 				%td.center
-					- (0...book.stars).each do |i|
-						%svg.icon{}
-							%use{"xlink:href":"/images/icons.svg#icon-star"}
+					%abbr{:title => book.diff_more } #{book.difficulty}
 				%td.center.problems=book.problems
 
 .pure-g
