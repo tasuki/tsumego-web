@@ -1,0 +1,221 @@
+:root {
+	--color-background: #1B1B1B;
+	--color-fainter:    #222;
+	--color-faint:      #333;
+	--color-text:       #BBB;
+	--color-more:       #DDD;
+	--color-link:       #F90;
+	--color-contrasty:  #FFF;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-background: #FFF;
+		--color-fainter:    #E6E6E6;
+		--color-faint:      #CCC;
+		--color-text:       #444;
+		--color-more:       #333;
+		--color-link:       #C60;
+		--color-contrasty:  #000;
+	}
+}
+
+html, button, input, select, textarea, .pure-g [class*=pure-u] {
+	font-family: "Titillium Web";
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-text);
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	line-height: 1.5;
+	min-height: 100vh;
+}
+
+.pad {
+	margin: auto;
+	max-width: 900px;
+	padding: 0;
+}
+@media (min-width: 450px) {
+	.pad {
+		padding: 0 10px;
+	}
+}
+
+a {
+	color: var(--color-link);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-link);
+	text-decoration: underline;
+}
+
+.pure-menu {
+	margin-bottom: 0;
+	border-bottom: 1px solid var(--color-faint);
+}
+
+.pure-menu-item > a {
+	border-top: 5px solid transparent;
+}
+
+.pure-menu-item > a:hover, .pure-menu-item.active > a {
+	border-top: 5px solid var(--color-link);
+	color: var(--color-contrasty);
+}
+
+.pure-menu-link:hover {
+	background-color: inherit;
+	text-decoration: none;
+}
+
+.pure-menu-link {
+	padding: 0.3em;
+}
+@media (min-width: 350px) {
+	.pure-menu-link {
+		padding: 0.5em;
+	}
+}
+@media (min-width: 450px) {
+	.pure-menu-link {
+		padding: 0.5em 1em;
+	}
+}
+
+#banner {
+	border-bottom: 1px solid var(--color-faint);
+	margin-bottom: 20px;
+	background: var(--color-fainter);
+}
+#goban svg {
+	margin: auto;
+	display: none;
+	height: 150px;
+	max-width: 400px;
+	background-color: var(--color-fainter);
+}
+#goban .lines {
+	stroke: var(--color-more);
+}
+#goban .black {
+	fill: var(--color-more);
+}
+#goban .white {
+	fill: var(--color-fainter);
+}
+
+@media (min-width: 48em) {
+	#goban svg {
+		display: block;
+	}
+}
+
+#quote {
+	padding: 10px;
+}
+@media (min-width: 48em) {
+	#quote {
+		padding: 10px 0px;
+	}
+}
+#quote blockquote {
+	border-left: 0;
+	margin: 0 10px;
+	padding: 0;
+}
+#quote blockquote p {
+	font-size: 20px;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+	text-indent: -0.3em;
+}
+#quote blockquote cite {
+	font-style: italic;
+}
+
+#content h3 {
+	font-size: 28px;
+	margin: 10px;
+}
+#content p {
+	margin: 10px;
+}
+#content .footnotes p {
+	margin: 0;
+}
+#content abbr[title] {
+	cursor: help;
+	border-bottom: 1px dotted var(--color-text);
+	text-decoration: none;
+}
+#content ul {
+	list-style-type: square;
+}
+#content table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	max-width: 500px;
+	margin: 0 auto 24px auto;
+	width: 100%;
+}
+#content tbody tr {
+	border-top: 1px solid var(--color-fainter);
+}
+#content tbody tr:hover {
+	background-color: var(--color-fainter);
+}
+#content th, #content td {
+	padding: 5px;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+@media (min-width: 450px) {
+	#content th, #content td {
+		padding: 8px;
+	}
+}
+#content th.center, #content td.center {
+	text-align: center;
+}
+#content th.default, #content td.default {
+	font-weight: bold;
+}
+#content th.problems, #content td.problems {
+	display: none;
+}
+@media (min-width: 400px) {
+	#content th.problems, #content td.problems {
+		display: block;
+	}
+}
+
+.icon {
+	width: 1em;
+	height: 1em;
+	margin-right: -0.25em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+footer {
+	background-color: var(--color-fainter);
+	border-top: 1px solid var(--color-faint);
+	color: var(--color-text);
+	padding: 17px;
+}
+footer p {
+	margin: 0;
+	padding: 0;
+	opacity: .7;
+}
+footer a {
+	color: var(--color-link);
+}
