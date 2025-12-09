@@ -1,13 +1,12 @@
-/* Titillium */
 @font-face {
-	font-family: 'Titillium Web'; font-style: normal; font-weight: 400; font-display: swap;
-	src: url('/fonts/titillium-web-v15-latin-ext_latin-400.woff2') format('woff2');
+	font-family: 'Alegreya'; font-style: normal; font-weight: 400; font-display: swap;
+	src: url('/fonts/alegreya-v29-latin-ext_latin-400.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'Titillium Web'; font-style: italic; font-weight: 400; font-display: swap;
-	src: url('/fonts/titillium-web-v15-latin-ext_latin-400i.woff2') format('woff2');
+	font-family: 'Alegreya'; font-style: italic; font-weight: 400; font-display: swap;
+	src: url('/fonts/alegreya-v29-latin-ext_latin-400i.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'Titillium Web'; font-style: normal; font-weight: 700; font-display: swap;
-	src: url('/fonts/titillium-web-v15-latin-ext_latin-700.woff2') format('woff2');
+	font-family: 'Alegreya'; font-style: normal; font-weight: 700; font-display: swap;
+	src: url('/fonts/alegreya-v29-latin-ext_latin-700.woff2') format('woff2');
 }

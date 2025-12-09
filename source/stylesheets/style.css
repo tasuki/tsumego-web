@@ -2,8 +2,8 @@
 	--color-background: #1B1B1B;
 	--color-fainter:    #222;
 	--color-faint:      #333;
-	--color-text:       #BBB;
-	--color-more:       #DDD;
+	--color-inactive:   #888;
+	--color-text:       #DDD;
 	--color-link:       #F90;
 	--color-contrasty:  #FFF;
 }
@@ -11,18 +11,19 @@
 @media (prefers-color-scheme: light) {
 	:root {
 		--color-background: #FFF;
-		--color-fainter:    #E6E6E6;
+		--color-fainter:    #EEE;
 		--color-faint:      #CCC;
-		--color-text:       #444;
-		--color-more:       #333;
+		--color-inactive:   #666;
+		--color-text:       #333;
 		--color-link:       #C60;
 		--color-contrasty:  #000;
 	}
 }
 
 html, button, input, select, textarea, .pure-g [class*=pure-u] {
-	font-family: "Titillium Web";
-	font-size: 16px;
+	font-family: "Alegreya";
+	font-variant-numeric: tabular-nums;
+	font-size: 18px;
 }
 
 body {
@@ -76,6 +77,7 @@ a:hover {
 
 .pure-menu-link {
 	padding: 0.3em;
+	color: var(--color-inactive);
 }
 @media (min-width: 350px) {
 	.pure-menu-link {
@@ -101,10 +103,10 @@ a:hover {
 	background-color: var(--color-fainter);
 }
 #goban .lines {
-	stroke: var(--color-more);
+	stroke: var(--color-text);
 }
 #goban .black {
-	fill: var(--color-more);
+	fill: var(--color-text);
 }
 #goban .white {
 	fill: var(--color-fainter);
@@ -126,11 +128,11 @@ a:hover {
 }
 #quote blockquote {
 	border-left: 0;
+	font-size: 22px;
 	margin: 0 10px;
 	padding: 0;
 }
 #quote blockquote p {
-	font-size: 20px;
 	line-height: 1.25;
 	margin: 0;
 	padding: 0;
@@ -141,7 +143,7 @@ a:hover {
 }
 
 #content h3 {
-	font-size: 28px;
+	font-size: 30px;
 	margin: 10px;
 }
 #content p {
