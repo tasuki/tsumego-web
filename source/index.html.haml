@@ -5,86 +5,128 @@ description: It is a matter of life and death,
              Hence it is a subject of inquiry
              which can on no account be neglected.
 
-books:
+collection_groups:
     -
-        name: "Cho's Elementary"
-        difficulty: 13 kyu
-        diff_more: 20 to 9 kyu
-        file: cho-1-elementary
-        problems: 900
+        title: A structured progression
+        description: "Not sure where to begin? Start with Cho Chikun's Encyclopedia volume closest to your level. These three books form a study sequence."
+        books:
+            -
+                name: "Cho's Elementary"
+                description: "Build your foundation in life and death."
+                difficulty: 13 kyu
+                diff_more: 20 to 9 kyu
+                file: cho-1-elementary
+                problems: 900
+            -
+                name: "Cho's Intermediate"
+                description: "Develop reading and recognition of familiar shapes."
+                difficulty: 3 kyu
+                diff_more: 9 kyu to 1 dan
+                file: cho-2-intermediate
+                problems: 861
+            -
+                name: "Cho's Advanced"
+                description: "Stretch your reading with more demanding problems."
+                difficulty: 1 dan
+                diff_more: 5 kyu to 3 dan
+                file: cho-3-advanced
+                problems: 792
     -
-        name: "Cho's Intermediate"
-        difficulty: 5 kyu
-        diff_more: 10 to 1 kyu
-        file: cho-2-intermediate
-        problems: 861
+        title: Featured classics
+        description: "Three favourites, each with a different appeal. Choose what interests you; these aren't successive levels."
+        books:
+            -
+                name: "Gokyo Shumyo"
+                description: "Tsumego patterns that often turn up in real games."
+                difficulty: 1 dan
+                diff_more: 2 kyu to 5 dan
+                file: gokyoshumyo
+                problems: 520
+            -
+                name: "Xuanxuan Qijing"
+                description: "Ingenious shapes, vital points, feel for the unexpected."
+                difficulty: 2 dan
+                diff_more: 1 to 6 dan
+                file: xxqj
+                problems: 347
+            -
+                name: "Igo Hatsuyo-ron"
+                description: "Here to make you cry. An extreme challenge."
+                difficulty: 7 dan
+                diff_more: this is sparta!
+                file: hatsuyoron
+                problems: 183
     -
-        name: "Cho's Advanced"
-        difficulty: 1 kyu
-        diff_more: 5 kyu to 2 dan
-        file: cho-3-advanced
-        problems: 792
-    -
-        name: "Gokyo Shumyo"
-        difficulty: 1 dan
-        diff_more: 2 kyu to 4 dan
-        file: gokyoshumyo
-        problems: 520
-    -
-        name: "Xuanxuan Qijing"
-        difficulty: 2 dan
-        diff_more: 1 to 5 dan
-        file: xxqj
-        problems: 347
-    -
-        name: "Igo Hatsuyo-ron"
-        difficulty: 7 dan
-        diff_more: this is sparta!
-        file: hatsuyoron
-        problems: 183
+        title: More classical collections
+        description: "For readers looking to explore further: more shapes, different ideas, and the wider repertoire."
+        books:
+            -
+                name: "Guanzi Pu"
+                description: "A sprawling collection of tsumego and endgame tesuji."
+                difficulty: 3 dan
+                diff_more: 1 to 6 dan
+                file: guanzi-pu
+                problems: 1107
+            -
+                name: "Shikatsu Myoki"
+                description: "Practical problems in killing, living, ko, and semeai."
+                difficulty: 5 dan
+                diff_more: 3 to 7 dan
+                file: shikatsu-myoki
+                problems: 120
+            -
+                name: "Wangyou Qingle Ji"
+                description: "Compact 12th c. anthology with quirky problem names."
+                difficulty: 4 dan
+                diff_more: 2 kyu to 7 dan
+                file: wangyou-qingle-ji
+                problems: 37
+            -
+                name: "Gokyo Seimyo"
+                description: "Gokyo Shumyo sequel: tesuji, connections, ladders, etc."
+                difficulty: 3 dan
+                diff_more: 1 to 5 dan
+                file: gokyo-seimyo
+                problems: 142
 ---
 
-%table
-	%thead
-		%tr
-			%th
-				%abbr{:title => "A5 pdf for print and on-screen"} Booklet
-			%th
-				%abbr{:title => "A6 pdf for mobile devices"} Mobile
-			%th.center Difficulty
-			%th.center.problems Problems
-
-	%tbody
-		- current_page.data.books.each do |book|
-			%tr
-				%td.default
-					%a{:href => "/books/#{book.file}.pdf"} #{book.name}
-				%td
-					%a{:href => "/books/#{book.file}-mobile.pdf"} Mobile
-				%td.center
-					%abbr{:title => book.diff_more } #{book.difficulty}
-				%td.center.problems=book.problems
-
-.pure-g
-	.pure-u-md-1-2
+.pure-g.collection-columns
+	.pure-u-1.pure-u-md-1-2
 		:markdown
-			### The collections
+			## A growing tsumego library
 
-			*Cho Chikun's Encyclopedia of Life and Death* is a wonderful
-			progression which will take you **from an absolute beginner to mid
-			dan level**.
+			These collections bring together life-and-death problems for study and
+			exploration, whether you prefer solving on paper or reading on screen.
 
-			Next, we present you with the three **most famous classical tsumego
-			collections**. *Gokyo Shumyo* deals mostly with patterns occuring
-			often in real games. *XuanXuan Qijing* focuses on feeling and vital
-			points, and the insanely difficult *Igo Hatsuyo-ron* is here just
-			to make you cry.
+			For a steady course of study, start with the volume of Cho Chikun's
+			*Encyclopedia of Life &amp; Death* closest to your level. If you'd rather
+			follow your curiosity, dip into one of the classical collections:
+			each has its own character and challenges.
 
-	.pure-u-md-1-2
+			Every collection comes in two PDF formats: a two-column A5 booklet
+			for printing, and a smaller, one-column A6 version for reading on a phone.
+
+	- current_page.data.collection_groups.each do |group|
+		.pure-u-1.pure-u-md-1-2
+			= partial 'collection_group', :locals => { :group => group }
+
+	.pure-u-1.pure-u-md-1-2
 		:markdown
-			### Gimme moaaar!
+			## November 2026 updates
 
-			Six books not enough for you?
+			Four more classics join the library: *Guanzi Pu*, *Shikatsu Myoki*,
+			*Wangyou Qingle Ji*, and *Gokyo Seimyo*.
+			Everything's been redone, for both booklet and mobile formats:
+
+			- everything is aligned to the grid
+			- problems are padded so the columns are equal height
+			- many other minor visual improvements
+
+	.pure-u-1.pure-u-md-1-2
+		:markdown
+			## Gimme moaaar!
+
+			Still looking for more?
 			Olivier has created [101books].[^1]
 			There's lots more problems there than here,[^2]
 			and the books include solutions.[^3]

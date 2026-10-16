@@ -4,17 +4,3 @@
 			%li.pure-menu-item{nav_active("index")}= link_to "Tsumego Collections", "/", :class => "pure-menu-link"
 			%li.pure-menu-item{nav_active("faq")}= link_to "FAQ", "/faq/", :class => "pure-menu-link"
 			%li.pure-menu-item{nav_active("how")}= link_to "How?", "/how/", :class => "pure-menu-link"
-
-#banner
-	.pad
-		.pure-g
-			#goban.pure-u-md-1-2
-				= render_partial 'goban.html'
-			#quote.pure-u-md-1-2
-				%blockquote
-					%p
-						&ldquo;It is a matter of life and death, a road either
-						to safety or to ruin.  Hence it is a subject of inquiry
-						which can on no account be neglected.&rdquo;
-					%cite
-						&mdash; Sun Tzu: The Art of War

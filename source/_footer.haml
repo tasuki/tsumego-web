@@ -1,7 +1,21 @@
-.pad
-	:markdown
-		&copy; [Vít &lsquo;tasuki&rsquo; Brunner](https://tasuki.org)
-		&mdash; Brought to you by [TeX](http://tug.org),
-		[Middleman](https://middlemanapp.com),
-		[Pure.css](https://purecss.io/),
-		[Vim](https://www.vim.org), and other cool technologies.
+#banner
+	.pad
+		.pure-g
+			#goban.pure-u-md-1-2
+				= render_partial 'goban.html'
+			#quote.pure-u-md-1-2
+				%blockquote
+					%p
+						&ldquo;It is a matter of life and death, a road either
+						to safety or to ruin.  Hence it is a subject of inquiry
+						which can on no account be neglected.&rdquo;
+					%cite
+						&mdash; Sun Tzu: The Art of War
+.footer-credits
+	.pad
+		:markdown
+			&copy; [Vít &lsquo;tasuki&rsquo; Brunner](https://tasuki.org)
+			&mdash; Brought to you by [TeX](http://tug.org),
+			[Middleman](https://middlemanapp.com),
+			[Pure.css](https://purecss.io/),
+			[Vim](https://www.vim.org), and other cool technologies.
