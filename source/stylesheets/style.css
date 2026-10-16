@@ -57,6 +57,7 @@ a:hover {
 }
 
 .pure-menu {
+	background-color: var(--color-fainter);
 	margin-bottom: 0;
 	border-bottom: 1px solid var(--color-faint);
 }
@@ -92,7 +93,6 @@ a:hover {
 
 #banner {
 	border-bottom: 1px solid var(--color-faint);
-	margin-bottom: 20px;
 	background: var(--color-fainter);
 }
 #goban svg {
@@ -142,8 +142,13 @@ a:hover {
 	font-style: italic;
 }
 
-#content h3 {
-	font-size: 30px;
+#content {
+	padding-top: 20px;
+}
+
+#content h2 {
+	font-size: 26px;
+	line-height: 1.2;
 	margin: 10px;
 }
 #content p {
@@ -184,8 +189,9 @@ a:hover {
 		padding: 8px;
 	}
 }
-#content th.center, #content td.center {
-	text-align: center;
+#content th.numeric, #content td.numeric {
+	text-align: right;
+	padding-right: 12px;
 }
 #content th.default, #content td.default {
 	font-weight: bold;
@@ -199,6 +205,58 @@ a:hover {
 	}
 }
 
+.collection-group {
+	max-width: 680px;
+	margin: 0 auto;
+}
+#content .collection-group table {
+	max-width: 400px;
+	width: calc(100% - 20px);
+	margin: 0 10px 36px 5px;
+}
+@media (min-width: 450px) {
+	#content .collection-group table {
+		margin-left: 2px;
+	}
+}
+#content .collection-group td {
+	vertical-align: top;
+}
+#content .collection-group .book-info {
+	width: 100%;
+	white-space: normal;
+}
+#content .collection-group .book-links td {
+	padding-bottom: 3px;
+}
+#content .collection-group .book-description-row {
+	border-top: 0;
+}
+#content .collection-group .book-description {
+	color: var(--color-inactive);
+	padding-top: 0;
+	white-space: normal;
+	font-size: 0.9em;
+	font-weight: normal;
+	line-height: 1.35;
+}
+#content .collection-group tbody:hover tr {
+	background-color: var(--color-fainter);
+}
+@media (min-width: 400px) {
+	#content .collection-group th.problems,
+	#content .collection-group td.problems {
+		display: table-cell;
+	}
+}
+
+@media (min-width: 48em) and (max-width: 56em) {
+	#content .collection-columns th.problems,
+	#content .collection-columns td.problems {
+		display: none;
+	}
+}
+
 .icon {
 	width: 1em;
 	height: 1em;
@@ -208,14 +266,18 @@ a:hover {
 }
 
 footer {
-	background-color: var(--color-fainter);
+	background-color: var(--color-background);
 	border-top: 1px solid var(--color-faint);
 	color: var(--color-text);
+}
+.footer-credits {
 	padding: 17px;
 }
-footer p {
-	margin: 0;
+.footer-credits p {
+	width: fit-content;
+	margin: 0 auto;
 	padding: 0;
+	text-align: left;
 	opacity: .7;
 }
 footer a {

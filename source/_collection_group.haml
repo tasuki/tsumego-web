@@ -1,0 +1,25 @@
+%section.collection-group
+	%h2= group.title
+	%p.collection-summary= group.description
+	%table
+		%thead
+			%tr
+				%th
+					%abbr{:title => "A5 pdf for print and on-screen"} Booklet
+				%th
+					%abbr{:title => "A6 pdf for mobile devices"} Mobile
+				%th.numeric Difficulty
+				%th.numeric.problems Count
+		- group.books.each do |book|
+			%tbody
+				%tr.book-links
+					%td.default.book-info
+						%a{:href => "/books/#{book.file}.pdf"}= book.name
+					%td
+						%a{:href => "/books/#{book.file}-mobile.pdf"} Mobile
+					%td.numeric
+						%abbr{:title => book.diff_more}= book.difficulty
+					%td.numeric.problems
+						= book.problems
+				%tr.book-description-row
+					%td.book-description{:colspan => 4}= book.description
